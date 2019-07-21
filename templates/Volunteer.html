@@ -80,9 +80,7 @@ function send(){
                 "id": 0};
                 
     d = JSON.stringify(data);
-    alert(d);
     socket.send(d);
-    alert("send")
     document.getElementById("get_address").submit();
     };
 

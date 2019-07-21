@@ -1,10 +1,8 @@
 from flask import Flask, request, render_template
-from flask_bootstrap import Bootstrap
 
 import database_module as db
 
 app = Flask(__name__)
-bootstrap = Bootstrap(app)
 
 
 @app.route('/')
