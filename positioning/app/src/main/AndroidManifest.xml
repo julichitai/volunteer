@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.here.android.example.volunteer">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:maxSdkVersion="22" android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <application
+        android:name=".Globals"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:label="@string/app_name" android:name="com.here.android.example.volunteer.BasicPositioningActivity">
+        </activity>
+
+
+        <activity android:name="com.here.android.example.volunteer.OrderActivity">
+        </activity>
+
+        <activity android:name=".VolunteerActivity"/>
+        <activity android:name=".LoginRegisterActivity"/>
+
+        <activity android:label="@string/app_name" android:name="com.here.android.example.volunteer.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!--Developers should put application credentials here.To obtain them, please register the application
+         at https://developer.here.com/develop/mobile-sdks-->
+        <meta-data
+            android:name="com.here.android.maps.appid"
+            android:value="hrqNQUaENpfPAK7ZNoqq" />
+        <meta-data
+            android:name="com.here.android.maps.apptoken"
+            android:value="6stRoTbGpIv8-j7Xe6-XhA" />
+        <meta-data
+            android:name="com.here.android.maps.license.key"
+            android:value="k7uNvNBdG4emJ0iiFWv48Gsgab5lj7+Pmz/+uo+HD2U6TYh8SxUGnVgA3WuX8LcXjJI38iklzmZQ1dN1tUfE8f6z3kyOTEJdVUSxq3C6uq/o9CVn0izYuTnU5vPLXAqE883A5l5VlU3GKnPOm9Ojxq5Y0ZdYk4jpxt8CN68m3S6As93lWIVaCgStJv7OMhEKYorWTUG0vZznpezAlzSq6TDhDfGBvVqZRtyM+wtahj5OEuhPe0QnMPBddhFdfCxhSnWb2iWxHkJo9iDpipfoDYwtC/nhy95Gw+hN8LPT9UpXGyWrlzzS4OqydhBU5MGFmlojQ59NOSPazOxcfQlR/oKHW2Y2XGmCyurVsQWFvh5cb97qO7zlJ/dN0bQbN1mGELqLBGG89jEQnrk0j28jonXaVM3bZF6TSn9owtVLD1tFVKjbwLvn8foP9Rj8X+XIRdA4Ldh6cFlD5oR3HBlM+0RYe4WimCafMEyIognjotTHFJAm2Q/d26eqSMnVNg77laeVYnhNkL+oCT3tbMPH53liGahmDBpaBr2InhOIQvgdwZ0yuGuuDwOoM0kTDy1w2gezzdvOfDxG0OA7NosiWgaOPGbaOal11UQVTHTpUomNUYdS5vEInJkbnO4WCF9H5Y7zgcbSf7Ilsi3U9cLlnHtRCcfbOzl8RXPMXouwB3A=" />
+
+         <!--Developers should always provide custom values for each of {YOUR_LABEL_NAME} and {YOUR_INTENT_NAME}.
+         Do not reuse HERE SDK defaults.-->
+        <meta-data
+            android:name="INTENT_NAME"
+            android:value="inte" />
+        <service
+            android:name="com.here.android.mpa.service.MapService"
+            android:label="intl"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="inte"></action>
+            </intent-filter>
+        </service>
+        <!--
+            Embed the HERE Positioning Service.
+            For more information, see the HERE SDK Developer's Guide
+        -->
+        <service android:enabled="true" android:exported="false" android:name="com.here.services.internal.LocationService" android:process=":remote">
+        </service>
+        <!--
+            HERE Location boot receiver definition.
+            For more information, see the HERE SDK Developer's Guide
+        -->
+        <receiver
+            android:name="com.here.services.internal.BootReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

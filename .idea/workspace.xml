@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="251c62da-740b-4578-bd99-80bf043a2e57" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/back/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/database_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/database_module.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/socket_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/socket_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/socketss.py" beforeDir="false" afterPath="$PROJECT_DIR$/socketss.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/templates/Success.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/templates/Volunteer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/templates/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/templates/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/Success.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/Volunteer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Volunteer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/contacts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/files/bch.png" beforeDir="false" afterPath="$PROJECT_DIR$/templates/files/bch.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/files/bchb.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/templates/files/bchb.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/files/fonts/Circe.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/templates/files/fonts/Circe.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/files/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/templates/files/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/files/ml.png" beforeDir="false" afterPath="$PROJECT_DIR$/templates/files/ml.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +16,7 @@
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -53,8 +36,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/Volunteer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+            <state relative-caret-position="349">
+              <caret line="90" column="4" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -115,6 +98,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/back" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -152,24 +136,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563703031115</updated>
-      <workItem from="1563703032547" duration="933000" />
+      <workItem from="1563703032547" duration="1592000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="933000" />
+    <option name="totallyTimeSpent" value="1592000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.24246575" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.29589042" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -205,7 +190,7 @@
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
@@ -221,8 +206,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/Volunteer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+        <state relative-caret-position="349">
+          <caret line="90" column="4" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="4" />
         </state>
       </provider>
     </entry>
