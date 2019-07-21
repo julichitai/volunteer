@@ -38,12 +38,12 @@
       <div class="content">
       <div class="form-part">
         <h1 class="huge-title">Хочу настроить оборудование для цифрового ТВ</h1>
-        <form method='LINK' action='Success.html#request'>
-          <input type="text" name="phone"  required="" placeholder="Ваш номер телефона" maxlength="17">
-          <input type="text" name="name" required="" placeholder="Как вас зовут?">
-          <input type="text" name="address" required="" placeholder="Ваш адрес"><br>
+        <form id="get_address" method="POST" action="Success.html#request">
+          <input type="text" id="client_phone" name="phone"  required="" placeholder="Ваш номер телефона" maxlength="17">
+          <input type="text" id="client_name" name="name" required="" placeholder="Как вас зовут?">
+          <input type="text" id="address" name="address" required="" placeholder="Ваш адрес"><br>
           <p class="terms">Нажимая кнопку ниже, я&nbsp;соглашаюсь<br><a href="">с&nbsp;условиями пользовательского соглашения</a></p>
-          <input class="blue-btn" type="submit" value="Отправить данные">
+          <input class="blue-btn" type="submit" value="Отправить данные" onclick = send()>
         </form>
       </div>
     </div>
@@ -60,6 +60,35 @@
 }
 
   </style>
+  
+  <script>
+  var socket = new WebSocket("ws://192.168.1.230:8765");
+socket.onopen = function() {
+  alert("Соединение установлено.");
+};
+
+function send(){
+
+    var address = document.getElementById("address").value;
+    var client_phone = document.getElementById("client_phone").value;
+    var client_name = document.getElementById("client_name").value;
+    var data = {"jsonrpc": "2.0",
+                "method": "add_task",
+                "params": {'clent_name': client_name,
+                           'address': address,
+                           'client_phone': client_phone},
+                "id": 0};
+                
+    d = JSON.stringify(data);
+    alert(d);
+    socket.send(d);
+    alert("send")
+    document.getElementById("get_address").submit();
+    };
+
+
+  
+  </script>
     <script src="files/main.js"></script>
     
   
